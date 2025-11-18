@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: student-course-api
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://YOUR_MYSQL_HOST:3307/university_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: YOUR_MYSQL_USER
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: YOUR_MYSQL_PASSWORD
